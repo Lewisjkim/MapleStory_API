@@ -18,8 +18,15 @@
 
 
 
-CPlayer::CPlayer()
-	: m_fSpeed(200.f)
+CPlayer::CPlayer()	: 
+	m_fSpeed(200.f),
+	m_Damage(10.f),
+	m_HP(100.f),
+	m_MaxHP(100.f),
+	m_MP(100),
+	m_MaxMP(100),
+	m_EXP(0.f),
+	m_MaxEXP(100.f)
 {
 	CreateCollider();
 	CreateAnimator();

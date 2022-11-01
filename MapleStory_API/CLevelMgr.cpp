@@ -37,7 +37,7 @@ void CLevelMgr::init()
 	m_arrLevel[(UINT)LEVEL_TYPE::EDITOR] = new CEditorLevel;
 
 	//시작할 현재 화면 설정
-	ChangeLevel(LEVEL_TYPE::EDITOR);
+	ChangeLevel(LEVEL_TYPE::STAGE_01);
 
 	
 	/*//// Level 생성

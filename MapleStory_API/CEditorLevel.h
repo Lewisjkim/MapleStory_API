@@ -1,6 +1,7 @@
 #pragma once
 #include "CLevel.h"
 class CTexture;
+
 enum class EDITOR_MODE
 {
     TILE,
@@ -17,6 +18,7 @@ class CEditorLevel :
 private:
     HMENU           m_hMenu;//메뉴 핸들값
     EDITOR_MODE     m_eMode;
+
     CTexture*       m_pTex;
     HINSTANCE       hInst;
 public:

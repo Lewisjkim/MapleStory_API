@@ -32,5 +32,9 @@ using std::wstring;
 #include "struct.h"
 #include "func.h"
 
+////gdiplus
+//#include <gdiplus.h>
+//#pragma	comment(lib, "Gdiplus.lib")
+//using namespace Gdiplus;
 
 #pragma comment (lib, "Msimg32.lib")//TransparentBlt을 사용하기 위해 필요한 라이브러리 msdn에서 requirement라고 표시됨

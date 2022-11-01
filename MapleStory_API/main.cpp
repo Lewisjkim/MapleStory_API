@@ -16,6 +16,9 @@ using std::vector;
 HINSTANCE   hInst;                                  // 현재 인스턴스입니다.
 HWND        g_hWnd;                                 //main window handle
 
+////gdiplus
+//ULONG_PTR gdiplusToken;
+//GdiplusStartupInput gdiplusStartupInput;
 
 ATOM                MyRegisterClass(HINSTANCE hInstance);
 BOOL                InitInstance(HINSTANCE, int);
@@ -43,6 +46,19 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     CEngine::GetInst()->init(g_hWnd, 1600, 900);
 
+    ////gdiplus
+    //GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, NULL);
+   
+    //HWND hWnd = CEngine::GetInst()->GetMainWnd();
+    //HDC hdc = GetDC(hWnd);
+    //Image* image = Image::FromFile(L"texture/jump_left.png");
+    //::Graphics g(hdc);
+    //// (x, y)에 width X height 크기의 이미지를 그립니다.
+    //g.DrawImage(image, 100, 500, 100, 100);
+
+    //// 데이터 메모리 해제
+    //delete image;
+    //ReleaseDC(hWnd, hdc);
 
     HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_MAPLESTORYAPI));
     MSG msg;

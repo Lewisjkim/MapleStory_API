@@ -14,6 +14,7 @@ private:
     float       m_MP;      
     float       m_MaxMP;   
     float       m_EXP;     
+    float       m_MaxEXP;     
 
 public:
     virtual void tick() override;

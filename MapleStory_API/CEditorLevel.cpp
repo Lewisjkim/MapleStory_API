@@ -41,6 +41,8 @@ CEditorLevel::~CEditorLevel()
 {
 	if (nullptr != m_hMenu)
 		DestroyMenu(m_hMenu);
+
+
 }
 
 void CEditorLevel::init()
@@ -65,6 +67,9 @@ void CEditorLevel::init()
 
 	CreateTile(0, 0);
 
+
+
+	
 }
 
 

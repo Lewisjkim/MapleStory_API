@@ -48,14 +48,49 @@ void CStage1::init()
 	
 	//Ground
 	CPlatform* ground = new CPlatform;
-	ground->SetPos(Vec2(800.f, 780.f));
-	ground->GetCollider()->SetScale(Vec2(1600.f, 50.f));
+	ground->SetPos(Vec2(150.f, 750.f));//이 위치 중심
+	ground->GetCollider()->SetScale(Vec2(300.f, 50.f));
 	AddObject(ground, LAYER::PLATFORM);
+
+	CPlatform* ground1 = new CPlatform;
+	ground1->SetPos(Vec2(760.f, 780.f));//이 위치 중심
+	ground1->GetCollider()->SetScale(Vec2(950.f, 50.f));
+	AddObject(ground1, LAYER::PLATFORM);
+
+	CPlatform* ground2 = new CPlatform;
+	ground2->SetPos(Vec2(1250.f, 810.f));//이 위치 중심
+	ground2->GetCollider()->SetScale(Vec2(60.f, 50.f));
+	AddObject(ground2, LAYER::PLATFORM);
+	
+	CPlatform* ground3 = new CPlatform;
+	ground3->SetPos(Vec2(1400.f, 835.f));//이 위치 중심
+	ground3->GetCollider()->SetScale(Vec2(300.f, 50.f));
+	AddObject(ground3, LAYER::PLATFORM);
+
+	CPlatform* ground4 = new CPlatform;
+	ground4->SetPos(Vec2(1560.f, 810.f));//이 위치 중심
+	ground4->GetCollider()->SetScale(Vec2(60.f, 50.f));
+	AddObject(ground4, LAYER::PLATFORM);
+
+	CPlatform* ground5 = new CPlatform;
+	ground5->SetPos(Vec2(1830.f, 780.f));//이 위치 중심
+	ground5->GetCollider()->SetScale(Vec2(520.f, 50.f));
+	AddObject(ground5, LAYER::PLATFORM);
+
+	//airground
+	CPlatform* airground = new CPlatform;
+	airground->SetPos(Vec2(655.f, 564.f));//이 위치 중심
+	airground->GetCollider()->SetScale(Vec2(490.f, 20.f));
+	AddObject(airground, LAYER::PLATFORM);
+
+
+
 
 	//플레이어 생성
 	CPlayer* Player = new CPlayer;
-	Player->SetPos(Vec2(100.f, 700.f));
+	Player->SetPos(Vec2(100.f, 680.f));
 	Player->SetScale(Vec2(180.f, 180.f));
+	
 	AddObject(Player, LAYER::PLAYER);
 
 	//portal
@@ -64,9 +99,7 @@ void CStage1::init()
 	portal->SetScale(Vec2(80.f, 80.f));
 	AddObject(portal, LAYER::PORTAL);
 	
-	//배경 string Collision 생성
-
-	//플레이어 생성
+	
 
 	//몬스터 생성(Wood)
 	CObj* monWood = new CWood;
